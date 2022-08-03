@@ -5,15 +5,15 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Document
       ========================================================================== */
 
 html {
-  scroll-behavior: smooth;
-  font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 /* Sections
@@ -36,11 +36,11 @@ html {
     */
 
 body {
-  color: var(--text-color);
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-base);
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
 }
 
 h1,
@@ -49,8 +49,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-family-title);
-  font-weight: var(--font-weight-bold);
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
 }
 
 /* Grouping content
@@ -61,8 +61,8 @@ h6 {
     */
 
 a:link {
-  color: var(--text-color);
-  text-decoration: none;
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 /**
@@ -70,7 +70,7 @@ a:link {
     */
 
 a:visited {
-  font-style: italic;
+    font-style: italic;
 }
 
 /**
@@ -78,7 +78,7 @@ a:visited {
     */
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /**
@@ -86,42 +86,44 @@ a:hover {
     */
 
 a:active {
-  background-color: var(--color-light-grey);
+    background-color: var(--color-light-grey);
 }
 
 /**
     * All elements should have their display to none.
     */
 .visually-hidden {
-  display: none;
+    display: none;
 }
 
 /**
     * All elements should have their foreground color set to #D73953,
     */
 .card-category {
-  color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 /**
  * Set the padding on all 4 sides to section-padding.
  */
 .section {
-  padding: var(--section-padding);
+    padding: var(--section-padding);
 }
+
 /**
     * 1. Set horizontal alignment.
     * 2. Set the padding on all 4 sides to section-padding.
     */
 .section-header {
-  text-align: var(--section-header-align);
+    text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
 }
 
 /**
  * Set the padding on all 4 sides to section-padding.
  */
 .section-body {
-  padding: var(--section-body-padding);
+    padding: var(--section-body-padding);
 }
 
 /**
@@ -129,8 +131,8 @@ a:active {
  * 2. Set the horizontal alignment with section-footer-align.
  */
 .section-footer {
-  padding: var(--section-body-padding);
-  text-align: var(--section-footer-align);
+    padding: var(--section-body-padding);
+    text-align: var(--section-footer-align);
 }
 
 /**
@@ -141,11 +143,11 @@ a:active {
     * 5. Set the text color using section-title-color.
     */
 .section-title {
-  font-family: var(--font-family-title);
-  font-size: var(--font-size-xx-large);
-  font-weight: var(--font-weight-bold);
-  margin: var(--section-title-margin);
-  color: var(--section-title-color);
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
 }
 
 /**
@@ -155,10 +157,10 @@ a:active {
     * 4. Set the weight of fonts to font-weight-bold.
     */
 .section-tagline {
-  color: var(--color-primary);
-  font-family: var(--font-family-title);
-  text-transform: var(--section-tagline-transform);
-  font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
 }
 
 /**
@@ -166,40 +168,40 @@ a:active {
     * 2. Evenly distribute the margins on both the left and and right side
     */
 .container {
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Custom properties
       ========================================================================== */
 :root {
-  --color-primary: #d73953;
-  --color-black: #090909;
-  --color-white: #ffffff;
-  --color-light-grey: #f3f3f3;
-  --color-dark-grey: #353535;
-  --text-color: var(--color-black);
-  --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-size-small: 1.2rem;
-  --font-size-medium: 1.6rem;
-  --font-size-large: 1.8rem;
-  --font-size-x-large: 2.3rem;
-  --font-size-xx-large: 4.8rem;
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
-  --line-height-small: 1.2;
-  --line-height-base: 1.5;
-  --line-height-big: 1.8;
-  --section-header-align: center;
-  --section-tagline-transform: uppercase;
-  --section-title-margin: 0;
-  --section-title-color: var(--color-black);
-  --section-padding: 5rem 0;
-  --section-header-padding: 0 0 3rem;
-  --section-body-padding: 0 0 3rem;
-  --section-footer-padding: 3rem 0 0;
-  --section-footer-align: center;
-  --footer-padding: 5rem 0 1rem;
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
 }

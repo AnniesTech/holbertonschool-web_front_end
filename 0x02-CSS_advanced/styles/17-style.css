@@ -173,6 +173,13 @@ a:active {
     margin-right: auto;
 }
 
+/**
+ * Set the padding on all 4 sides to section-padding.
+ */
+.footer {
+    padding: var(--footer-padding);
+}
+
 /* Custom properties
       ========================================================================== */
 :root {

@@ -1,0 +1,11 @@
+/* Creates H* tags, where ‘*’ is the size of the font used.
+1. h1 must have font size equal to 1px, h2 must have font size equal to 2px, etc.
+2. You must create H* tags from 1 to 5
+3. You must use @for statement */
+$i: 5;
+
+@for $contador from 1 through $i    {
+    h#{$contador}{
+        font-size: #{$contador}px;
+    }
+}

@@ -5,7 +5,7 @@ $color: #3D3D3D;
 $color2: #FF0000;
 body  {
     color: $color;
-    .red:first-child {
+    & > .red {
         color: $color2;
     }
 }

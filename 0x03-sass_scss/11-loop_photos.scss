@@ -1,0 +1,11 @@
+/* Creates a class for each name in the list $list-names and 
+assigns the background image based on the name:
+1. You must use @import
+2. You must use @each statement */
+@import '11-photos.scss';
+
+@each $my_item in $list-names {
+    .photo-#{$my_item} {
+        background: image-url("photos/#{$my_item}") no-repeat;
+    }
+}

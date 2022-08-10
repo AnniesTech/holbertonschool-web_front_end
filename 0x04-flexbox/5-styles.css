@@ -361,14 +361,14 @@ a:active {
 /* Grid
       ============================= */
 
-.row {
-    display: flex;
-}
-
 ul.row {
     margin: -1rem;
     padding: 0;
     list-style: none;
+}
+
+.row {
+    display: flex;
 }
 
 
@@ -386,7 +386,6 @@ ul.row {
 
 /* Navbar
       ============================= */
-
 
 .nav {
     margin: 0;
@@ -434,16 +433,16 @@ ul.row {
 /* Header
       ============================= */
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header {
     padding: var(--header-padding);
     position: relative;
     z-index: 3;
     background: transparent;
-}
-
-.header-container{
-    display: flex;
-    justify-content: space-between;
 }
 
 /* Footer
@@ -545,12 +544,12 @@ ul.row {
 }
 
 /* Section Latest news ============================= */
+
 .section-latest-news .row {
     flex-direction: row-reverse;
 }
 
-/* Section SERVICES
-      ============================= */
+/* Section SERVICES ============================= */
 
 .section-services .row {
     flex-wrap: wrap;
